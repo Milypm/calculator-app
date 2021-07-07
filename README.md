@@ -14,7 +14,7 @@ You can visit the live project here: [Calculator App](https://calculator-app-070
 - JSX
 - CSS
 
-## How To Run It
+## How To Run It (Locally)
 1. It's recommended to use Git's latest version.
 2. Clone or download the repo: [calculator-app](https://github.com/Milypm/calculator-app) to your local system
     - Click on the "Code" green button and copy 'HTTPS URL'
@@ -39,4 +39,4 @@ Visit [issues' section](https://github.com/Milypm/calculator-app/issues)
 Give a :star2: if you like this project!
 
 ## License
-This project is [MIT Licensed]()
+This project is [MIT Licensed](https://github.com/Milypm/calculator-app/blob/milestone-one/LICENSE)
