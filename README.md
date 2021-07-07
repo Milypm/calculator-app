@@ -39,4 +39,4 @@ Visit [issues' section](https://github.com/Milypm/calculator-app/issues)
 Give a :star2: if you like this project!
 
 ## License
-This project is [MIT Licensed]()
+This project is [MIT Licensed](https://github.com/Milypm/calculator-app/blob/milestone-one/LICENSE)
