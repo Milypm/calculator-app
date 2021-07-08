@@ -1,15 +1,18 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import '../style/style.css';
 
-export class Button extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-  render() {
-    return(
-      <div className="button-container">
-        <p>{this.props.btnName}</p>
-      </div>
-    )
-  }
+function Button({ btnName }) {
+  const color = btnName === '÷' || btnName === 'X' || btnName === '-' || btnName === '+' || btnName === '=' ? 'orange' : 'grey';
+  const width = btnName === '0' ? 'large' : 'normal';
+  return (
+    <div className={`button-container ${color} ${width}`}>
+      <p>{btnName}</p>
+    </div>
+  );
 }
+
+Button.propTypes = {
+  btnName: PropTypes.string.isRequired,
+};
+
+export default Button;
