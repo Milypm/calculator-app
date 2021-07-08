@@ -1,5 +1,7 @@
-import Big from 'big.js';
+// import Big from 'big.js';
 
-function operate({ numberOne, numberTwo, operation }) {
-
+const operate = ({ numberOne, numberTwo, operation }) => {
+  
 };
+
+export default operate;

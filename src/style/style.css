@@ -9,20 +9,23 @@
   background-color: rgb(128, 125, 134);
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   color: #fff;
   margin: 0;
   padding: 0;
+  height: 105px;
 }
 
 .display-container p {
-  margin-right: 20px;
+  margin: 0;
+  margin-right: 25px;
   padding: 0;
+  font-size: 41px;
 }
 
 .btnPanel-container {
   margin: 0;
   width: 100%;
-  font-size: 23px;
 }
 
 .btns-row {
@@ -35,7 +38,8 @@
   justify-content: center;
   color: #000;
   border: 1px solid rgb(204, 203, 204);
-  padding: 13px 0;
+  padding: 35px 0;
+  font-size: 23px;
 }
 
 .grey {
@@ -51,5 +55,5 @@
 }
 
 .large {
-  width: 50.2%;
+  width: 50%;
 }
