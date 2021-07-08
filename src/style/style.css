@@ -1,3 +1,8 @@
 body {
   font-size: 30px;
 }
+
+.display-container {
+  background-color: gray;
+  color: #fff;
+}
