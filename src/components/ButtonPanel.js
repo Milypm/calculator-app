@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/style.css';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = () => (
   <div className="btnPanel-container">
     <div className="btns-row">
       <Button btnName="AC" />
@@ -33,7 +33,7 @@ const ButtonPanel = () => {
       <Button btnName="." />
       <Button btnName="=" />
     </div>
-  </div>;
-};
+  </div>
+);
 
 export default ButtonPanel;
