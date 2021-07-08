@@ -6,3 +6,8 @@ body {
   background-color: gray;
   color: #fff;
 }
+
+.button-container {
+  background-color: lightgrey;
+  color: #000;
+}
