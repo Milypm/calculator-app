@@ -1,19 +1,22 @@
 import PropTypes from 'prop-types';
 import '../style/style.css';
 
-const Button = ({ props }) => {
-  const { btnName, clickHandler } = props;
+const Button = (props) => {
+  const { btnName } = props;
+  const { clickHandler } = props;
   const color = btnName === '÷' || btnName === 'x' || btnName === '-' || btnName === '+' || btnName === '=' ? 'orange' : 'grey';
   const width = btnName === '0' ? 'large' : 'normal';
+  const handleClick = (btnName) => clickHandler(btnName);
+
   return (
-    <button type="button" className={`button-container ${color} ${width}`} onClick={clickHandler(btnName)}>
+    <button type="button" className={`button-container ${color} ${width}`} onClick={handleClick(btnName)}>
       <span>{btnName}</span>
     </button>
   );
 };
 
 Button.propTypes = {
-  props: PropTypes.func.isRequired,
+  // props: PropTypes.func.isRequired,
   clickHandler: PropTypes.func.isRequired,
   btnName: PropTypes.string.isRequired,
 };

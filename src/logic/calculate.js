@@ -1,6 +1,6 @@
 import operate from './operate';
 
-const calculate = ({ calcObj, btnName }) => {
+const calculate = (calcObj, btnName) => {
   let { total, next, operation } = calcObj;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   const getTotal = total;
