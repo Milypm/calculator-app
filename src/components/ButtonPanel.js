@@ -42,8 +42,12 @@ const ButtonPanel = ({ props }) => {
   );
 };
 
+ButtonPanel.defaultProps = {
+  props: false,
+};
+
 ButtonPanel.propTypes = {
-  props: PropTypes.func.isRequired,
+  props: PropTypes.func,
   clickHandler: PropTypes.func.isRequired,
 };
 

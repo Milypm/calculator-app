@@ -6,7 +6,7 @@ const Button = ({ props }) => {
   const color = btnName === '÷' || btnName === 'x' || btnName === '-' || btnName === '+' || btnName === '=' ? 'orange' : 'grey';
   const width = btnName === '0' ? 'large' : 'normal';
   return (
-    <button type="button" className={`button-container ${color} ${width}`} onClick={clickHandler}>
+    <button type="button" className={`button-container ${color} ${width}`} onClick={clickHandler(btnName)}>
       <span>{btnName}</span>
     </button>
   );

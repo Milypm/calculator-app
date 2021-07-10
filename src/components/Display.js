@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../style/style.css';
 
-const Display = ({ result }) => (
+const Display = ({ next }) => (
   <div className="display-container">
-    <p>{result}</p>
+    <p>{next}</p>
   </div>
 );
 
 Display.defaultProps = {
-  result: '0',
+  next: '0',
 };
 
 Display.propTypes = {
-  result: PropTypes.string,
+  next: PropTypes.string,
 };
 
 export default Display;
