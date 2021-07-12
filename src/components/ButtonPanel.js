@@ -43,7 +43,6 @@ const ButtonPanel = (props) => {
 };
 
 ButtonPanel.propTypes = {
-  // props: PropTypes.func.isRequired,
   clickHandler: PropTypes.func.isRequired,
 };
 
