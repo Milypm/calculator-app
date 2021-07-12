@@ -9,7 +9,7 @@ const Button = (props) => {
   const handleClick = (btnName) => clickHandler(btnName);
 
   return (
-    <button type="button" className={`button-container ${color} ${width}`} onClick={handleClick(btnName)}>
+    <button type="button" className={`button-container ${color} ${width}`} onClick={() => handleClick(btnName)}>
       <span>{btnName}</span>
     </button>
   );
