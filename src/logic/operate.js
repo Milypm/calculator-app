@@ -4,15 +4,15 @@ const operate = (numberOne, numberTwo, operation) => {
   let total;
   const oneBig = Big(numberOne);
   const twoBig = Big(numberTwo);
-  if (operation === '-') {
+  if (operation === 'subtraction') {
     total = oneBig.minus(twoBig);
-  } else if (operation === '+') {
+  } else if (operation === 'addition') {
     total = oneBig.plus(twoBig);
-  } else if (operation === 'x') {
+  } else if (operation === 'multiplication') {
     total = oneBig.times(twoBig);
-  } else if (operation === '÷') {
+  } else if (operation === 'division') {
     total = oneBig.div(twoBig);
-  } else if (operation === '%') {
+  } else if (operation === 'module') {
     total = oneBig.mod(twoBig);
   }
   return total;
