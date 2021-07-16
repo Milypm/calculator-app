@@ -2,7 +2,6 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
-// import operate from '../logic/operate';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +20,6 @@ class App extends React.Component {
     const { operation } = this.state;
     const obj = { total, next, operation };
     const calcObj = calculate(obj, btnName);
-    console.log('handleClick', calcObj);
     this.setState({
       total: calcObj.total,
       next: calcObj.next,
@@ -31,7 +29,6 @@ class App extends React.Component {
 
   render() {
     const { next } = this.state;
-    console.log(next);
     return (
       <>
         <Display value={next} />

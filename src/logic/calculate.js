@@ -2,10 +2,10 @@ import operate from './operate';
 
 const calculate = (calcObj, btnName) => {
   let { total, next, operation } = calcObj;
+  total = total === null ? 0 : total;
+  next = next === null || next === '0' ? 0 : next;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   const ops = ['-', '+', 'x', '÷', '%'];
-  total = total === null ? 0 : total;
-  next = next === null ? 0 : next;
   let resTotal;
   if (btnName === '+/-') {
     if (operation !== null) {
@@ -27,25 +27,32 @@ const calculate = (calcObj, btnName) => {
     }
     resTotal = total;
   } else if (btnName === '=') {
-    resTotal = operate(total, parseInt(next, 10), operation);
-    next = resTotal.toString();
+    const nextArr = next.split('');
+    const el = nextArr.find((el) => ops.includes(el));
+    const getIndex = nextArr.lastIndexOf(el);
+    const finalNum = nextArr.slice(getIndex + 1).join('');
+    console.log('finalNum', finalNum);
+    console.log('operation', operation);
+    const result = operate(total, parseInt(finalNum, 10), operation);
+    resTotal = result;
+    next = result.toString();
   } else if (numbers.includes(btnName)) {
-    const nextStr = next.toString();
     if (operation !== null) {
-      if (nextStr.includes('.')) {
-        next = `${next}.${btnName}`;
-        resTotal = operate(total, parseInt(next, 10), operation);
+      if (next.slice(-1) === '.') {
+        next = `${next}${btnName}`;
+        resTotal = total;
       } else {
-        next = btnName;
-        resTotal = operate(total, parseInt(next, 10), operation);
+        next = `${next}${btnName}`;
+        resTotal = total;
       }
     } else if (operation === null) {
-      if (nextStr.includes('.')) {
+      const nextStr = next.toString();
+      if (nextStr.slice(-1) === '.') {
         next = `${next}${btnName}`;
         resTotal = 0;
       } else {
-        next = btnName;
-        resTotal = 0;
+        next = next === 0 ? btnName : `${next}${btnName}`;
+        resTotal = parseInt(next, 10);
       }
     }
   } else if (btnName === 'AC') {
@@ -62,19 +69,14 @@ const calculate = (calcObj, btnName) => {
     } else if (btnName === '÷') {
       operation = 'division';
     } else if (btnName === '%') {
+      total /= 100;
       operation = 'module';
     }
-    if (total === 0) {
-      resTotal = 0;
-    } else {
-      resTotal = operate(total, parseInt(next, 10), operation);
-    }
+    next = `${next}${btnName}`;
+    resTotal = total;
   }
   total = resTotal;
-  console.log('log total', total);
-  console.log('log next', next);
   const obj = { total, next, operation };
-  console.log('log object', obj);
   return obj;
 };
 
