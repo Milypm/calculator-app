@@ -31,6 +31,7 @@ const calculate = (calcObj, btnName) => {
     const el = nextArr.find((el) => ops.includes(el));
     const getIndex = nextArr.lastIndexOf(el);
     const finalNum = nextArr.slice(getIndex + 1).join('');
+    console.log('total', total);
     console.log('finalNum', finalNum);
     console.log('operation', operation);
     const result = operate(total, parseInt(finalNum, 10), operation);

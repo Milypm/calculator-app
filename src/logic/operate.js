@@ -5,11 +5,14 @@ const operate = (numberOne, numberTwo, operation) => {
   let obj;
   const oneBig = Big(numberOne);
   const twoBig = Big(numberTwo);
+  console.log('oneBig', oneBig);
+  console.log('twoBig', twoBig);
   if (operation === 'subtraction') {
     obj = oneBig.minus(twoBig).c;
     total = obj.length === 1 ? oneBig.minus(twoBig) : parseInt(obj.join(''), 10);
   } else if (operation === 'addition') {
     obj = oneBig.plus(twoBig).c;
+    console.log(obj);
     total = obj.length === 1 ? oneBig.plus(twoBig) : parseInt(obj.join(''), 10);
   } else if (operation === 'multiplication') {
     obj = oneBig.times(twoBig).c;
