@@ -6,6 +6,7 @@
 }
 
 .display-container {
+  width: 100%;
   background-color: rgb(128, 125, 134);
   display: flex;
   justify-content: flex-end;
@@ -17,6 +18,9 @@
 }
 
 .display-container p {
+  width: 93%;
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   margin-right: 25px;
   padding: 0;
