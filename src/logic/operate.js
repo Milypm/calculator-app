@@ -2,26 +2,18 @@ import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let total;
-  let obj;
   const oneBig = Big(numberOne);
   const twoBig = Big(numberTwo);
-  console.log('oneBig', oneBig);
-  console.log('twoBig', twoBig);
   if (operation === 'subtraction') {
-    obj = oneBig.minus(twoBig).c;
-    total = obj.length === 1 ? oneBig.minus(twoBig) : parseInt(obj.join(''), 10);
+    total = oneBig.minus(twoBig);
   } else if (operation === 'addition') {
-    obj = oneBig.plus(twoBig).c;
-    console.log(obj);
-    total = obj.length === 1 ? oneBig.plus(twoBig) : parseInt(obj.join(''), 10);
+    total = oneBig.plus(twoBig);
   } else if (operation === 'multiplication') {
-    obj = oneBig.times(twoBig).c;
-    total = obj.length === 1 ? oneBig.times(twoBig) : parseInt(obj.join(''), 10);
+    total = oneBig.times(twoBig);
   } else if (operation === 'division') {
     total = oneBig.div(twoBig);
   } else if (operation === 'module') {
-    obj = oneBig.mod(twoBig).c;
-    total = obj.length === 1 ? oneBig.mod(twoBig) : parseInt(obj.join(''), 10);
+    total = oneBig.mod(twoBig) * twoBig;
   }
   return total;
 };
