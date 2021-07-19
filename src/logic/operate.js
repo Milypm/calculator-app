@@ -12,8 +12,8 @@ const operate = (numberOne, numberTwo, operation) => {
     total = oneBig.times(twoBig);
   } else if (operation === 'division') {
     total = oneBig.div(twoBig);
-  } else if (operation === 'module') {
-    total = oneBig.mod(twoBig) * twoBig;
+  } else if (operation === 'percentage') {
+    total = oneBig / numberTwo;
   }
   return total;
 };

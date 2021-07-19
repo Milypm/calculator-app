@@ -15,9 +15,7 @@ class App extends React.Component {
   }
 
   handleClick(btnName) {
-    const { total } = this.state;
-    const { next } = this.state;
-    const { operation } = this.state;
+    const { total, next, operation } = this.state;
     const obj = { total, next, operation };
     const calcObj = calculate(obj, btnName);
     this.setState({

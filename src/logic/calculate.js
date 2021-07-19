@@ -59,18 +59,23 @@ const calculate = (calcObj, btnName) => {
     operation = null;
   } else if (ops.includes(btnName)) {
     if (btnName === '-') {
+      next = `${next}${btnName}`;
       operation = 'subtraction';
     } else if (btnName === '+') {
+      next = `${next}${btnName}`;
       operation = 'addition';
     } else if (btnName === 'x') {
+      next = `${next}${btnName}`;
       operation = 'multiplication';
     } else if (btnName === '÷') {
+      next = `${next}${btnName}`;
       operation = 'division';
     } else if (btnName === '%') {
-      total /= 100;
-      operation = 'module';
+      operation = 'percentage';
+      const result = operate(total, 100, operation);
+      total = result;
+      next = total.toString();
     }
-    next = `${next}${btnName}`;
     resTotal = total;
   }
   total = resTotal;
