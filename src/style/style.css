@@ -1,0 +1,63 @@
+#root {
+  width: 58%;
+  margin: auto;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.display-container {
+  width: 100%;
+  background-color: rgb(128, 125, 134);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 105px;
+}
+
+.display-container p {
+  width: 93%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0;
+  font-size: 41px;
+}
+
+.btnPanel-container {
+  margin: 0;
+  width: 100%;
+}
+
+.btns-row {
+  display: flex;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  border: 1px solid rgb(204, 203, 204);
+  padding: 35px 0;
+  font-size: 23px;
+}
+
+.grey {
+  background-color: rgb(231, 223, 223);
+}
+
+.orange {
+  background-color: orange;
+}
+
+.normal {
+  width: 25%;
+}
+
+.large {
+  width: 50%;
+}
