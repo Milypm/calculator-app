@@ -12,11 +12,23 @@ body {
   padding: 10px 25px;
 }
 
+.home-h2,
+.calc-h2,
+.quote-h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.quote-h2 {
+  width: 90%;
+  margin: 100px auto;
+}
+
 .header-navbar {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  border: 1px solid red;
+  align-items: center;
+  font-size: 23px;
 }
 
 .nav-ul {
@@ -24,12 +36,14 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  border: 1px solid green;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .calc-div {
+  margin-top: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 .calc-container {
@@ -37,7 +51,6 @@ body {
   margin: auto;
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid blue;
 }
 
 .display-container {

@@ -5,7 +5,7 @@ import '../style/style.css';
 const Home = () => (
   <div className="first-div">
     <Navbar />
-    <h3>Welcome to our page!</h3>
+    <h2 className="home-h2">Welcome to our page!</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut

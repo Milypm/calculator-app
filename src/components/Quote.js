@@ -5,7 +5,10 @@ import '../style/style.css';
 const Quote = () => (
   <div className="first-div">
     <Navbar />
-    <h1>Hello this is Quote of the Day!</h1>
+    <h2 className="quote-h2">
+      Mathematics is not about numbers, equations, computations,
+      or algorithms: it is about understanding. –William Paul Thurston
+    </h2>
   </div>
 );
 
