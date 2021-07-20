@@ -1,12 +1,46 @@
+body {
+  margin: 0;
+}
+
 #root {
-  width: 58%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.first-div {
+  padding: 10px 25px;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border: 1px solid red;
+}
+
+.nav-ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid green;
+  font-size: 20px;
+}
+
+.calc-div {
+  display: flex;
+}
+
+.calc-container {
+  width: 700px;
   margin: auto;
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid blue;
 }
 
 .display-container {
-  width: 100%;
   background-color: rgb(128, 125, 134);
   display: flex;
   justify-content: flex-end;
@@ -14,7 +48,7 @@
   color: #fff;
   margin: 0;
   padding: 0;
-  height: 105px;
+  height: 100px;
 }
 
 .display-container p {
@@ -29,12 +63,12 @@
 
 .btnPanel-container {
   margin: 0;
-  width: 100%;
 }
 
 .btns-row {
   display: flex;
   width: 100%;
+  height: 100px;
 }
 
 .button-container {

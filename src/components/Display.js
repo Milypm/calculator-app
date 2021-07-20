@@ -5,7 +5,7 @@ import '../style/style.css';
 const Display = (props) => {
   const { value } = props;
   return (
-    <div className="display-container">
+    <div className="calc-container display-container">
       <p>{value}</p>
     </div>
   );

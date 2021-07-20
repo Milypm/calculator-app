@@ -8,7 +8,7 @@ const ButtonPanel = (props) => {
   const handleClick = (btnName) => clickHandler(btnName);
 
   return (
-    <div className="btnPanel-container">
+    <div className="calc-container btnPanel-container">
       <div className="btns-row">
         <Button btnName="AC" clickHandler={() => handleClick('AC')} />
         <Button btnName="+/-" clickHandler={() => handleClick('+/-')} />

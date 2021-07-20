@@ -18,8 +18,16 @@ const App = () => {
 
   return (
     <>
-      <Display value={next} />
-      <ButtonPanel clickHandler={handleClick} />
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'space-between',
+        width: '100%',
+      }}
+      >
+        <Display value={next} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </>
   );
 };
