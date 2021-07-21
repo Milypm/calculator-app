@@ -65,7 +65,7 @@ a:hover {
 }
 
 .nav-ul {
-  width: 360px;
+  width: 370px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -76,6 +76,10 @@ a:hover {
 .nav-ul li {
   margin-left: 7px;
   padding-left: 0;
+}
+
+.li-calc {
+  font-weight: 600;
 }
 
 .li-separator {
