@@ -91,7 +91,7 @@ a:hover {
 .home-div p {
   width: 95%;
   margin-top: 60px;
-  font-size: 20px;
+  font-size: 22px;
   font-stretch: extra-expanded;
 }
 
@@ -158,12 +158,24 @@ a:hover {
   font-size: 23px;
 }
 
+.button-container:hover {
+  cursor: pointer;
+}
+
 .grey {
   background-color: rgb(231, 223, 223);
 }
 
+.grey:hover {
+  background-color: rgb(199, 194, 194);
+}
+
 .orange {
   background-color: orange;
+}
+
+.orange:hover {
+  background-color: rgb(221, 147, 9);
 }
 
 .normal {
