@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
+import '../style/style.css';
 
 const App = () => {
   const [total, setTotal] = useState(null);
-  const [next, setNext] = useState(null);
+  const [next, setNext] = useState('0');
   const [operation, setOperation] = useState(null);
 
   const handleClick = (btnName) => {
@@ -19,7 +19,9 @@ const App = () => {
   return (
     <>
       <div>
-        <Display value={next} />
+        <div className="calc-container display-container">
+          <p>{next}</p>
+        </div>
         <ButtonPanel clickHandler={handleClick} />
       </div>
     </>
