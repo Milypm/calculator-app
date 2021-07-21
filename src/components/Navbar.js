@@ -4,10 +4,13 @@ import '../style/style.css';
 
 const Navbar = () => (
   <div className="header-navbar">
-    <h1>Math Magicians</h1>
+    <div className="header-icon">
+      <h1>Math Magicians</h1>
+      <i className="fas fa-hat-wizard" />
+    </div>
     <ul className="nav-ul">
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/calculator">Calculator</Link></li>
+      <li className="li-separator"><Link to="/">Home</Link></li>
+      <li className="li-separator"><Link to="/calculator">Calculator</Link></li>
       <li><Link to="/quote-of-the-day">Quote of the Day</Link></li>
     </ul>
   </div>

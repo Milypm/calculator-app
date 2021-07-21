@@ -6,8 +6,7 @@ const Quote = () => (
   <div className="first-div">
     <Navbar />
     <h2 className="quote-h2">
-      Mathematics is not about numbers, equations, computations,
-      or algorithms: it is about understanding. –William Paul Thurston
+      &quot;But in my opinion, all things in nature occur mathematically.&quot;– Rene Descartes
     </h2>
   </div>
 );
