@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote component displays specific text on the screen 1`] = `
+<div
+  className="first-div"
+>
+  <div
+    className="header-navbar"
+  >
+    <div
+      className="header-icon"
+    >
+      <h1>
+        Math Magicians
+      </h1>
+      <i
+        className="fas fa-hat-wizard"
+      />
+    </div>
+    <ul
+      className="nav-ul"
+    >
+      <li
+        className="li-separator"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="li-separator li-calc"
+      >
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quote-of-the-day"
+          onClick={[Function]}
+        >
+          Quote of the Day
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h2
+    className="quote-h2"
+  >
+    "But in my opinion, all things in nature occur mathematically."– Rene Descartes
+  </h2>
+</div>
+`;
+
+exports[`Quote component renders Quote component 1`] = `
+<div
+  className="first-div"
+>
+  <div
+    className="header-navbar"
+  >
+    <div
+      className="header-icon"
+    >
+      <h1>
+        Math Magicians
+      </h1>
+      <i
+        className="fas fa-hat-wizard"
+      />
+    </div>
+    <ul
+      className="nav-ul"
+    >
+      <li
+        className="li-separator"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="li-separator li-calc"
+      >
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quote-of-the-day"
+          onClick={[Function]}
+        >
+          Quote of the Day
+        </a>
+      </li>
+    </ul>
+  </div>
+  <h2
+    className="quote-h2"
+  >
+    "But in my opinion, all things in nature occur mathematically."– Rene Descartes
+  </h2>
+</div>
+`;

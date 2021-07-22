@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component displays a list of clickable Links to go from one view to another 1`] = `
+<div
+  className="header-navbar"
+>
+  <div
+    className="header-icon"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <i
+      className="fas fa-hat-wizard"
+    />
+  </div>
+  <ul
+    className="nav-ul"
+  >
+    <li
+      className="li-separator"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="li-separator li-calc"
+    >
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote-of-the-day"
+        onClick={[Function]}
+      >
+        Quote of the Day
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Navbar component displays specific text on the screen 1`] = `
+<div
+  className="header-navbar"
+>
+  <div
+    className="header-icon"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <i
+      className="fas fa-hat-wizard"
+    />
+  </div>
+  <ul
+    className="nav-ul"
+  >
+    <li
+      className="li-separator"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="li-separator li-calc"
+    >
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote-of-the-day"
+        onClick={[Function]}
+      >
+        Quote of the Day
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Navbar component displays the Calculator component after clicking over the Calculator Link 1`] = `
+<div
+  className="header-navbar"
+>
+  <div
+    className="header-icon"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <i
+      className="fas fa-hat-wizard"
+    />
+  </div>
+  <ul
+    className="nav-ul"
+  >
+    <li
+      className="li-separator"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="li-separator li-calc"
+    >
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote-of-the-day"
+        onClick={[Function]}
+      >
+        Quote of the Day
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Navbar component renders Navbar component 1`] = `
+<div
+  className="header-navbar"
+>
+  <div
+    className="header-icon"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <i
+      className="fas fa-hat-wizard"
+    />
+  </div>
+  <ul
+    className="nav-ul"
+  >
+    <li
+      className="li-separator"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="li-separator li-calc"
+    >
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quote-of-the-day"
+        onClick={[Function]}
+      >
+        Quote of the Day
+      </a>
+    </li>
+  </ul>
+</div>
+`;
