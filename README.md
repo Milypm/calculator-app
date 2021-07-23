@@ -26,6 +26,10 @@ You can visit the live project here: [Calculator App](https://calculator-app-070
 5. Browser should open automatically, or open [http://localhost:3000](http://localhost:3000)
 6. You should see "Calculator App" on the browser screen
 
+## Tests
+- Go to the project's root directory
+- Run 'npm test'
+
 ## Author
 **Mily Puente** :woman_technologist:
 - GitHub: [@Milypm](https://github.com/Milypm)
