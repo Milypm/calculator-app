@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders Home component 1`] = `
+<div
+  className="first-div"
+>
+  <div
+    className="header-navbar"
+  >
+    <div
+      className="header-icon"
+    >
+      <h1>
+        Math Magicians
+      </h1>
+      <i
+        className="fas fa-hat-wizard"
+      />
+    </div>
+    <ul
+      className="nav-ul"
+    >
+      <li
+        className="li-separator"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="li-separator li-calc"
+      >
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quote-of-the-day"
+          onClick={[Function]}
+        >
+          Quote of the Day
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="home-div"
+  >
+    <h2
+      className="home-h2"
+    >
+      Welcome to our page!
+    </h2>
+    <p>
+      This site idea came to us because we wanted to provide a simple, practical and efficient solution for doing calculations on the web.
+      <br />
+      <br />
+      We love Math and we know how important it is in our busy current lives to have an easy way to execute operations on a friendly environment.
+      <br />
+      <br />
+      Please, go ahead and save us on your Favorites tab!
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App component 1`] = `
+<div>
+  <div
+    className="calc-container display-container"
+  >
+    <p>
+      0
+    </p>
+  </div>
+  <div
+    className="calc-container btnPanel-container"
+  >
+    <div
+      className="btns-row"
+    >
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          AC
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          +/-
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          %
+        </span>
+      </button>
+      <button
+        className="button-container orange normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          ÷
+        </span>
+      </button>
+    </div>
+    <div
+      className="btns-row"
+    >
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          7
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          8
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          9
+        </span>
+      </button>
+      <button
+        className="button-container orange normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          x
+        </span>
+      </button>
+    </div>
+    <div
+      className="btns-row"
+    >
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          4
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          5
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          6
+        </span>
+      </button>
+      <button
+        className="button-container orange normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          -
+        </span>
+      </button>
+    </div>
+    <div
+      className="btns-row"
+    >
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          1
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          2
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          3
+        </span>
+      </button>
+      <button
+        className="button-container orange normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          +
+        </span>
+      </button>
+    </div>
+    <div
+      className="btns-row"
+    >
+      <button
+        className="button-container grey large"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          0
+        </span>
+      </button>
+      <button
+        className="button-container grey normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          .
+        </span>
+      </button>
+      <button
+        className="button-container orange normal"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          =
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

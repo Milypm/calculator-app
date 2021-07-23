@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Calculator App With React
 
+![img_1](https://user-images.githubusercontent.com/54684961/126818315-2ed6d060-90c8-4697-8fad-054f87938bc7.png)
+
 I created this simple-functional web calculator app for executing math calculations.
 
 ## Live Project
@@ -23,6 +25,10 @@ You can visit the live project here: [Calculator App](https://calculator-app-070
 4. On your terminal, run 'npm start'
 5. Browser should open automatically, or open [http://localhost:3000](http://localhost:3000)
 6. You should see "Calculator App" on the browser screen
+
+## Tests
+- Go to the project's root directory
+- Run 'npm test'
 
 ## Author
 **Mily Puente** :woman_technologist:
