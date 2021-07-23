@@ -9,7 +9,7 @@ describe('Quote component', () => {
     const tree = renderer.create(
       <BrowserRouter>
         <Quote />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

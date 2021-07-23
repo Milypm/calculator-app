@@ -8,12 +8,20 @@ const calculate = (calcObj, btnName) => {
   const ops = ['-', '+', 'x', '÷', '%'];
   let resTotal;
   if (btnName === '+/-') {
-    if (operation !== null) {
-      parseInt(next, 10);
-      next *= -1;
-      resTotal = operate(total, next, operation);
-      next = resTotal.toString();
-    } else {
+    if (operation !== null && numbers.includes(next.slice(-1))) {
+      const nextArr = next.split('');
+      const el = nextArr.find((el) => ops.includes(el));
+      const getIndex = nextArr.lastIndexOf(el);
+      let finalNum = nextArr.slice(getIndex + 1).join('');
+      parseInt(finalNum, 10);
+      finalNum *= -1;
+      const newNext = nextArr.slice(0, getIndex + 1).join('');
+      next = `${newNext}${finalNum.toString()}`;
+      resTotal = total;
+    } else if (operation !== null && !numbers.includes(next.slice(-1))) {
+      resTotal = next;
+      next = resTotal;
+    } else if (operation === null) {
       parseInt(next, 10);
       next *= -1;
       resTotal = total;
@@ -28,12 +36,28 @@ const calculate = (calcObj, btnName) => {
     resTotal = total;
   } else if (btnName === '=') {
     const nextArr = next.split('');
-    const el = nextArr.find((el) => ops.includes(el));
-    const getIndex = nextArr.lastIndexOf(el);
-    const finalNum = nextArr.slice(getIndex + 1).join('');
-    const result = operate(total, parseInt(finalNum, 10), operation);
-    resTotal = result;
-    next = result.toString();
+    let count = 0;
+    nextArr.forEach((el) => {
+      if (ops.includes(el)) {
+        count += 1;
+      } else {
+        count += 0;
+      }
+    });
+    if (count === 1) {
+      const el = nextArr.find((el) => ops.includes(el));
+      const getIndex = nextArr.indexOf(el);
+      const finalNum = nextArr.slice(getIndex + 1).join('');
+      const result = operate(total, parseInt(finalNum, 10), operation);
+      resTotal = result;
+      next = result.toString();
+    } else if (count > 1) {
+      const getLastIndex = nextArr.indexOf('-');
+      const finalNum = nextArr.slice(getLastIndex).join('');
+      const result = operate(total, parseInt(finalNum, 10), operation);
+      resTotal = result;
+      next = result.toString();
+    }
   } else if (numbers.includes(btnName)) {
     if (operation !== null) {
       if (next.slice(-1) === '.') {

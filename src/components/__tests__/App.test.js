@@ -9,7 +9,7 @@ describe('App component', () => {
     const tree = renderer.create(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

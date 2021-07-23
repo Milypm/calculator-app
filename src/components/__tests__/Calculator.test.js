@@ -9,7 +9,7 @@ describe('Calculator component', () => {
     const tree = renderer.create(
       <BrowserRouter>
         <Calculator />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

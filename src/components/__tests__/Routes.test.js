@@ -14,7 +14,7 @@ test('full app rendering/navigating', () => {
     </Router>,
   );
   expect(screen.getByText(/Welcome to our page!/i)).toBeInTheDocument();
-  const leftClick = {button: 0}
+  const leftClick = { button: 0 };
   userEvent.click(screen.getByText('Calculator'), leftClick);
   expect(screen.getByText(/Let's do some math!/i)).toBeInTheDocument();
 });

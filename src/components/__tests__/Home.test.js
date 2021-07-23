@@ -9,7 +9,7 @@ describe('Home component', () => {
     const tree = renderer.create(
       <BrowserRouter>
         <Home />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

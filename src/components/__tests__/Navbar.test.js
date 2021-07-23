@@ -9,7 +9,7 @@ describe('Navbar component', () => {
     const tree = renderer.create(
       <BrowserRouter>
         <Navbar />
-      </BrowserRouter>
+      </BrowserRouter>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
