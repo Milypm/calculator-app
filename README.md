@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Calculator App With React
 
+![img_1](https://user-images.githubusercontent.com/54684961/126818315-2ed6d060-90c8-4697-8fad-054f87938bc7.png)
+
 I created this simple-functional web calculator app for executing math calculations.
 
 ## Live Project
