@@ -15,6 +15,9 @@ You can visit the live project here: [Calculator App](https://calculator-app-070
 - JavaScript
 - JSX
 - CSS
+- Jest
+- react-testing-library
+- Eslint / Stylint
 
 ## How To Run It (Locally)
 1. It's recommended to use Git's latest version
